@@ -1,0 +1,80 @@
+#head{
+    display: flex;
+    justify-content: space-between;
+    background-color: blue;
+}
+
+.headitem{
+    color: white;
+    font-family: sans-serif, serif;
+    font-weight: bold;
+    padding-top: 2.5%;
+    padding-right: 10%;
+}
+
+#logo{
+    width: 7%;
+    height: 10%;
+    border: 2px solid white;
+}
+
+h3{
+    color: blue;
+    padding-left: 5%;
+}
+
+h5{
+    color: purple;
+}
+
+.dip{
+    position: relative;
+    padding-left: 5%;
+    border-left: 2px solid purple;
+    margin-bottom: 2%;
+}
+
+.dip::before,
+.dip::after{
+    content: '';
+    position: absolute;
+    left: -5px;
+    width: 10px;
+    height: 10px;
+    border: 2px solid purple;
+    border-radius: 50%;
+}
+
+dip::before{
+    top: -5px;
+    border-bottom: none;
+    border-right: none;
+    transform: rotate(-45deg);
+}
+
+.dip::after{
+    bottom: -5px;
+    border-top: none;
+    border-right: none;
+    transform: rotate(45deg);
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+}
+
+.foot{
+    font-style: italic;
+    font-weight: bold;
+    padding-left: 20px;
+}
+a:hover{
+    background-color: pink;
+}
+
+a{
+    text-decoration: none;
+}
